@@ -8,7 +8,7 @@ const delay = require('./common/wait')
 const appOptions = require('./common/app-options')
 const extendClient = require('./common/client-extend')
 const log = require('./common/log')
-const { expect } = require('chai')
+// const { expect } = require('chai')
 
 describe('auto upgrade check', function () {
   it('auto upgrade check should work', async function () {
