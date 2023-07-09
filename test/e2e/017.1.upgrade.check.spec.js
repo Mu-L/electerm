@@ -32,7 +32,7 @@ describe('auto upgrade check', function () {
     await client.hasElem(sel)
     log('start download upgrade')
     await client.click('.upgrade-panel .ant-btn-primary')
-    await delay(3500)
+    await delay(1000)
     const txt = await client.getText('.upgrade-panel .ant-btn-primary')
     console.log('txt', txt)
     expect(txt.includes('Upgrading... 0% Cancel')).equal(false)
