@@ -22,7 +22,7 @@ async function main () {
   changeTeamId()
   rm('-rf', 'dist')
   writeSrc('mac-x64.dmg')
-  await run(`DEBUG=electron-builder ${pb}`)
+  await run(`DEBUG=* ${pb}`)
 }
 
 main()
